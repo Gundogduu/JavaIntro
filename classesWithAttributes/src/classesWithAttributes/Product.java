@@ -1,6 +1,17 @@
 package classesWithAttributes;
 
 public class Product {
+	
+	//constructor
+	public Product() {
+		
+	}
+	
+	//overloading
+	public Product(int id, String name, String description, double price, int stockAmount, String renk) {
+		System.out.println("Yapýcý blok çalýþtý");
+	}
+	
 	//attribute | field
 	private int _id;
 	private String _name;
