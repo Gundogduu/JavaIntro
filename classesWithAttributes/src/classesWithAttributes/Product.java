@@ -75,4 +75,5 @@ public class Product {
 
 //"this" vermek yerine "_" altçizgi ekleyerek birbirinden ayýrmýþ olduk.Ýkiside kullanýlabilir.
 
-//Tüm field'larýn getter/setter iþlemini otomatik yapamadým ECLIPSE'de!
+//Tüm field'larýn getter/setter iþlemini hýzlýca yapmak için ECLIPSE'de field üstündeyken saðtýk>source>Generate Constructor Using Fields diyoruz!
+//Intellij IDEA'da "refactor" dan yapýlýyor.
