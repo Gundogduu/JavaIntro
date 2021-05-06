@@ -2,18 +2,18 @@ package day3Task;
 
 public class Student extends User{
 
-	String nationalIdentity;
+	String studentNumber;
 	
-	public Student(int id, String firstName, String lastName, String email, String password, String nationalIdentity) {
+	public Student(int id, String firstName, String lastName, String email, String password, String studentNumber) {
 		super(id, firstName, lastName, email, password);
-		this.nationalIdentity = nationalIdentity;
+		this.studentNumber = studentNumber;
 	}
 	
-	public void setNationalIdentity(String nationalIdentity) {
-		this.nationalIdentity = nationalIdentity;
+	public void setStudentNumber(String studentNumber) {
+		this.studentNumber =studentNumber;
 	}
 
-	public String getNationalIdentity() {
-		return nationalIdentity;
+	public String getStudentNumber() {
+		return studentNumber;
 	}
 }

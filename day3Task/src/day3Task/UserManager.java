@@ -2,15 +2,15 @@ package day3Task;
 
 public class UserManager {
 	
-	User user = new User(1,"Mazlum","Rýfký","mazlum@gmail.com","147258");	
+	User user3 = new Instructor(1, "Hasan", "Sencer", "sencer11@gmail.com", "333222");	
 	
 	public void add(User user) {
 		System.out.println("Kullanýcý eklendi: " + user.getFirstName() );
 	}
 	
 	public void delete(int id) {		
-		if(this.user.getId() == id) {
-			System.out.println("Kullanýcý silindi: " + user.firstName);
+		if(this.user3.getId() == id) {
+			System.out.println("Kullanýcý silindi: " + user3.getFirstName());
 		}		
 	}
 	
