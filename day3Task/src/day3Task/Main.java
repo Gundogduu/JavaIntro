@@ -2,8 +2,7 @@ package day3Task;
 
 public class Main {
 
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {	
 		
 		UserManager manager = new UserManager();
 		manager.add(new Student(1, "Ahmet", "Gündüz", "gunduz34@gmail.com", "12345", "12365498711"));
