@@ -4,9 +4,9 @@ public class Main {
 
 	public static void main(String[] args) {	
 		
-		UserManager manager = new UserManager();
-		
+		InstructorManager manager = new InstructorManager();
 		System.out.println("---------Instructor--------");
+		
 		//ekleme
 		manager.add(new Instructor(1,"Engin","Demiroğ","demirog06@gmail.com","147258"));
 		
@@ -20,6 +20,7 @@ public class Main {
 		
 		
 		StudentManager manager2 = new StudentManager();
+		
 		System.out.println("---------Student--------");
 		//ekleme
 		manager2.add(new Student(1, "Ahmet", "Gündüz", "gunduz34@gmail.com", "12345", "12365498711"));

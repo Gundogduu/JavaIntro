@@ -15,7 +15,6 @@ public class StudentManager extends UserManager{
 		}		
 	}
 	
-
 	public void update(Student student) {
 		System.out.println("Kullanýcý güncellendi: " + student.getStudentNumber() + " no'lu " + student.getFirstName() + " " + student.getLastName());
 	}
