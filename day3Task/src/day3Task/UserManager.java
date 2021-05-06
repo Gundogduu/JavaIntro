@@ -6,12 +6,11 @@ public class UserManager {
 		System.out.println("Kullanýcý eklendi: " + user.firstName );
 	}
 	
-	public void login() {
-		System.out.println("Giriþ yapýldý");
+	public void delete(int id) {
+		System.out.println("Kullanýcý silindi");
 	}
 	
-	
-	public void sendComment() {
-		System.out.println("Yorumunuz gönderildi");
+	public void update(User user) {
+		System.out.println("Kullanýcý güncellendi: " + user.firstName );
 	}
 }
