@@ -17,11 +17,9 @@ public class Main {
 		manager.delete(1);
 		
 		
-		
-		
-		StudentManager manager2 = new StudentManager();
-		
+		StudentManager manager2 = new StudentManager();		
 		System.out.println("---------Student--------");
+		
 		//ekleme
 		manager2.add(new Student(1, "Ahmet", "Gündüz", "gunduz34@gmail.com", "12345", "12365498711"));
 		manager2.add(new Student(1, "Mehmet", "Gündüz", "gunduz25@gmail.com", "12384", "78965498711"));
