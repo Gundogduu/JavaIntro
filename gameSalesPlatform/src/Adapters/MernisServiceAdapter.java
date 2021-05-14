@@ -8,7 +8,6 @@ import tr.gov.nvi.tckimlik.WS.KPSPublicSoapProxy;
 
 public class MernisServiceAdapter implements IMemberCheckService{
 
-	@SuppressWarnings("deprecation")
 	@Override
 	public boolean CheckIfRealPerson(Member member) {
 		KPSPublicSoapProxy client = new KPSPublicSoapProxy();

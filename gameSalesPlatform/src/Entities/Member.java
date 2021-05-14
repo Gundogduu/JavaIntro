@@ -1,6 +1,6 @@
 package Entities;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 import Abstract.IEntity;
 
@@ -9,11 +9,11 @@ public class Member implements IEntity{
 	private String firstName;
 	private String lastName;
 	private String nationalityId;
-	private Date dateOfBirth;
+	private LocalDate dateOfBirth;
 	private String userName;
 	private String password;
 
-	public Member(int id, String firstName, String lastName, String nationalityId, Date dateOfBirth, String userName, String password) {
+	public Member(int id, String firstName, String lastName, String nationalityId, LocalDate dateOfBirth, String userName, String password) {
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -55,11 +55,11 @@ public class Member implements IEntity{
 		this.nationalityId = nationalityId;
 	}
 
-	public Date getDateOfBirth() {
+	public LocalDate getDateOfBirth() {
 		return dateOfBirth;
 	}
 
-	public void setDateOfBirth(Date dateOfBirth) {
+	public void setDateOfBirth(LocalDate dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
 

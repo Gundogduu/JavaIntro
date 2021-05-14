@@ -1,17 +1,16 @@
 package Entities;
 
-import java.util.Date;
-
+import java.time.LocalDate;
 import Abstract.IEntity;
 
 public class Campaign implements IEntity{
 	private int id;
 	private String name;
 	private double discountRate;
-	private Date startDate;
-	private Date expirationDate;
+	private LocalDate startDate;
+	private LocalDate expirationDate;
 
-	public Campaign(int id, String name, double discountRate, Date startDate, Date expirationDate) {
+	public Campaign(int id, String name, double discountRate, LocalDate startDate, LocalDate expirationDate) {
 		this.id = id;
 		this.name = name;
 		this.discountRate = discountRate;
@@ -50,22 +49,22 @@ public class Campaign implements IEntity{
 	}
 
 
-	public Date getStartDate() {
+	public LocalDate getStartDate() {
 		return startDate;
 	}
 
 
-	public void setStartDate(Date startDate) {
+	public void setStartDate(LocalDate startDate) {
 		this.startDate = startDate;
 	}
 
 
-	public Date getExpirationDate() {
+	public LocalDate getExpirationDate() {
 		return expirationDate;
 	}
 
 
-	public void setExpirationDate(Date expirationDate) {
+	public void setExpirationDate(LocalDate expirationDate) {
 		this.expirationDate = expirationDate;
 	}
 

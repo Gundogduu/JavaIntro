@@ -1,7 +1,8 @@
 package gameSalesPlatform;
 
 
-import java.util.Date;
+
+import java.time.LocalDate;
 import Abstract.BaseCampaignManager;
 import Abstract.BaseGameManager;
 import Abstract.BaseMemberManager;
@@ -15,7 +16,7 @@ import Entities.Member;
 
 public class Main {
 
-	@SuppressWarnings("deprecation")
+
 	public static void main(String[] args) {
 		BaseGameManager gameManager = new GameManager();
 		gameManager.add(new Game(1,"Resident Evil VILLAGE",250));
@@ -26,13 +27,13 @@ public class Main {
 		gameManager.getAll();
 		
 		BaseMemberManager memberManager = new MemberManager(new MernisServiceAdapter());
-		memberManager.add(new Member(1, "Samet", "Akar", "21548798512", new Date(1991,2,14), "akar_", "12345"));
-		memberManager.add(new Member(2, "Orhan", "Demir", "91848798525", new Date(1987,9,11), "demir2", "47859"));
-		memberManager.add(new Member(3, "Yavuz", "Noyan", "54748793629", new Date(1991,2,14), "noyan14", "987654"));
-		memberManager.add(new Member(4, "Hayri Can", "Gündoðdu", "21466815496", new Date(1995,11,11), "noyan14", "987654"));
+		memberManager.add(new Member(1, "Samet", "Akar", "21548798512", LocalDate.of(1991,2,14), "akar_", "12345"));
+		memberManager.add(new Member(2, "Orhan", "Demir", "91848798525", LocalDate.of(1987,9,11), "demir2", "47859"));
+		memberManager.add(new Member(3, "Yavuz", "Noyan", "54748793629", LocalDate.of(1991,2,14), "noyan14", "987654"));
+		memberManager.add(new Member(4, "Hayri Can", "Gündoðdu", "21466815496", LocalDate.of(1995,11,11), "noyan14", "987654"));
 		memberManager.getAll();
 		
 		BaseCampaignManager campaignManager = new CampaignManager();
-		campaignManager.add(new Campaign(1, "Summer Sale!", 15, new Date(14,05,2021), new Date(14,05,2021)));
+		campaignManager.add(new Campaign(1, "Summer Sale!", 15, LocalDate.of(2021,5,14), LocalDate.of(2021,5,14)));
 	}
 }
