@@ -30,7 +30,7 @@ public class Main {
 		memberManager.add(new Member(1, "Samet", "Akar", "21548798512", LocalDate.of(1991,2,14), "akar_", "12345"));
 		memberManager.add(new Member(2, "Orhan", "Demir", "91848798525", LocalDate.of(1987,9,11), "demir2", "47859"));
 		memberManager.add(new Member(3, "Yavuz", "Noyan", "54748793629", LocalDate.of(1991,2,14), "noyan14", "987654"));
-		memberManager.add(new Member(4, "Hayri Can", "Gündoðdu", "21466815496", LocalDate.of(1995,11,11), "noyan14", "987654"));
+		memberManager.add(new Member(4, "Hayri Can", "Gündoðdu", "44587645687", LocalDate.of(1995,1,18), "gundogdu", "987654"));
 		memberManager.getAll();
 		
 		BaseCampaignManager campaignManager = new CampaignManager();
