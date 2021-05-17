@@ -1,12 +1,11 @@
 package kayitVeGirisSistemi.dataAccess.abstracts;
 
-import java.util.List;
-
 import kayitVeGirisSistemi.entities.concretes.User;
 
 public interface UserDao {
-	void add(User user);
+	User add(User user);
 	User get(int id);
-	List<User> getAll();
+	User getByEmail(String email);
+	boolean userExists(String email);
 	
 }

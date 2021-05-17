@@ -1,10 +1,10 @@
 package kayitVeGirisSistemi.business.abstracts;
 
-import java.util.List;
-
 import kayitVeGirisSistemi.entities.concretes.User;
 
 public interface UserService {
-	void add(User user);
-	List<User> getAll();
+	User add(User user);
+	User get(int id);
+	User getByEmail(String email);
+	boolean userExists(String email);
 }
