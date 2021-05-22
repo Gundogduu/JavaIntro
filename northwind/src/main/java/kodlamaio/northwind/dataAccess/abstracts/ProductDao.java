@@ -8,6 +8,35 @@ public interface ProductDao extends JpaRepository<Product, Integer>{
 	
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //note: Interface, Interface'i extend eder.
 //note: JpaRepository<> --- verdiğin veri tipi için, yani @Entity annotation'uyla süslenmiş nesne için(Product), "Primary key" alanınıda verdiğimizde gerekli sorguları ona göre hazırlıyor.
 //note: public interface ProductDao extends JpaRepository<Product, Integer> ---  JpaRepository ile birlikte şu an ürünle tüm "CRUD" operasyonlarımız hazır.
